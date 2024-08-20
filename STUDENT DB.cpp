@@ -20,6 +20,7 @@ public:
             roll[i] = i;
             cout << "ENTER STUDENT NAME: ";
             getline(cin, name[i]);
+            transform(name[i].begin(), name[i].end(), name[i].begin(), ::toupper);
             cout << "ENTER STUDENT EMAIL ADDRESS: ";
             getline(cin, email[i]);
 
